@@ -1,0 +1,113 @@
+<section @fade class="text-dark" id="contact">
+  <div class="cover-page"></div>
+  <div class="content pl-4 pt-5">
+
+    <h2>We'd love to hear from you</h2>
+
+    <div id="map" style="height: 300px; width: 100%;" class="my-5">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.6159300580882!2d7.167212670688638!3d4.438106055632643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1068540f22e7a079%3A0xbc01eda33f88eb60!2sChannel%20Clinic!5e0!3m2!1sen!2sng!4v1572439858702!5m2!1sen!2sng" width="100%" height="100%" zoom="20" frameborder="0" style="border:0;" allowfullscreen="true"></iframe>
+      <!-- <agm-map [latitude]="lat" [longitude]="lng" [zoom]="20">
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+      </agm-map> -->
+    </div>
+
+    <div class="row text-center">
+      <div class="col-6 col-sm-6 col-md-3 col-lg-3" >
+        <i-feather name="map" class="big fill-purple d-block m-auto"></i-feather>
+        <small>#10 Hospital Road, Bonny Island</small>
+      </div>
+      <div class="col-6 col-sm-6 col-md-3 col-lg-3" >
+        <i-feather name="phone" class="big fill-purple d-block m-auto"></i-feather>
+        <small>+23470 6743 4036</small>
+      </div>
+      <div class="col-6 col-sm-6 col-md-3 col-lg-3" >
+        <i-feather name="mail" class="big fill-purple d-block m-auto"></i-feather>
+        <small>hello@channelclinic.org</small>
+      </div>
+      <div class="col-6 col-sm-6 col-md-3 col-lg-3" >
+        <a href="https://wa.me/2348033099689" target="_blank">
+          <i-feather name="message-circle" class="big fill-purple d-block m-auto"></i-feather>
+          <small>chat now</small>
+        </a>
+      </div>
+    </div>
+
+    <div class="my-4">
+
+      <form class="shadow p-4" [formGroup]="sendEmailForm" #f="ngForm">
+
+        <div class="row">
+
+          <div class="col col-sm-12 col-md-6 col-lg-6">
+            <div class="form-group">
+              <mat-form-field>
+                <input matInput
+                  placeholder="Name"
+                  type="text"
+                  formControlName="name"
+                >
+
+                <mat-error *ngIf="sendEmailForm.get('name').touched && sendEmailForm.get('name').invalid">
+                  <div class="error-block">
+                    <small *ngIf="sendEmailForm.get('name').hasError('required')" >Your name is required</small>
+                  </div>
+                </mat-error>
+
+              </mat-form-field>
+            </div>
+
+            <div class="form-group">
+              <mat-form-field style="margin-top: 8px;">
+                <input matInput
+                  placeholder="Email"
+                  type="email"
+                  formControlName="sender"
+                >
+
+                <mat-error *ngIf="sendEmailForm.get('sender').touched && sendEmailForm.get('sender').invalid">
+                  <div class="error-block">
+                    <small *ngIf="sendEmailForm.get('sender').hasError('required')" >Your email is required</small>
+                    <small *ngIf="sendEmailForm.get('sender').hasError('email')" >Your email is invalid</small>
+                  </div>
+                </mat-error>
+
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="col col-sm-12 col-md-6 col-lg-6">
+
+            <div class="form-group">
+              <mat-form-field>
+                <textarea matInput
+                  placeholder="Message"
+                  rows="6"
+                  formControlName="message"
+                ></textarea>
+
+                <mat-error *ngIf="sendEmailForm.get('message').touched && sendEmailForm.get('message').invalid">
+                  <div class="error-block">
+                    <small *ngIf="sendEmailForm.get('message').hasError('required')" >Your message is required</small>
+                  </div>
+                </mat-error>
+
+              </mat-form-field>
+            </div>
+
+          </div>
+
+          <div class="m-auto">
+            <button mat-raised-button class="mr-4" (click)="clearForm(f)">Clear</button>
+            <button mat-raised-button color="primary" [disabled]="sendEmailForm.invalid" (click)="sendEmail()" >Send</button>
+          </div>
+
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+</section>
+
+

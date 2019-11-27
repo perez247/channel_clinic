@@ -1,0 +1,33 @@
+
+.side-menu {
+  width: 90px;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.shadow-custom-right {
+  -webkit-box-shadow: 10px 2px 12px 6px rgba(0,0,0,0.3);
+  -moz-box-shadow: 10px 2px 12px 6px rgba(0,0,0,0.3);
+  box-shadow: 10px 2px 12px 6px rgba(0,0,0,0.3);
+}
+
+.shadow-custom-bottom {
+  -webkit-box-shadow: -1px 18px 12px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: -1px 18px 12px 0px rgba(0,0,0,0.3);
+box-shadow: -1px 18px 12px 0px rgba(0,0,0,0.3);
+}
+
+.mobile-css > li {
+  align-items: center;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+#menu-button {
+  float: right;
+  margin-top: 10px;
+}

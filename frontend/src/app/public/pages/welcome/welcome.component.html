@@ -1,0 +1,49 @@
+<section @fade id="home">
+
+<div class="text-center text-light first">
+  <div class="col-xs-8 col-sm-8 col-md-8 col-lg-3 m-auto">
+    <img src="/assets/images/logo.png" class="img-fluid" alt="Responsive image" >
+  </div>
+  <!-- <h1 class="display-4">Hello, world!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p> -->
+  <h1>Channel Cinic Consultant</h1>
+  <p class="lead large-2rem" >Providing and Caring for the growing needs of our community using medical services</p>
+  <div class="row mt-5 nav">
+
+    <div class="col-xs-6 col-sm-3 large-1-5rem my-5"
+    [routerLink]="['/' + appRoutes.public.welcome.path]" routerLinkActive="router-link-active"
+    >
+      <p><i-feather name="home" class="big fill-white"></i-feather></p>
+      Home
+    </div>
+
+    <div class="col-xs-6 col-sm-3 large-1-5rem my-5"
+    [routerLink]="['/' + appRoutes.public.about.path]" routerLinkActive="router-link-active"
+    >
+      <p><i-feather name="book" class="big fill-white" ></i-feather></p>
+      About
+    </div>
+
+    <div class="col-xs-6 col-sm-3 large-1-5rem my-5"
+    [routerLink]="['/' + appRoutes.public.community.path]" routerLinkActive="router-link-active"
+    >
+      <p><i-feather name="sun" class="big fill-white" ></i-feather></p>
+      Community
+    </div>
+
+    <div class="col-xs-6 col-sm-3 large-1-5rem my-5"
+    [routerLink]="['/' + appRoutes.public.contact.path]" routerLinkActive="router-link-active"
+    >
+      <p><i-feather name="phone" class="big fill-white"></i-feather></p>
+      Contact
+    </div>
+
+  </div>
+</div>
+
+</section>

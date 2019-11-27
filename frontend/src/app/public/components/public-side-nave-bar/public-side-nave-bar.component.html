@@ -1,0 +1,92 @@
+
+
+<div id="desktop-screen" class="side-menu fixed-top shadow-custom-right h-100">
+    <ul class="nav flex-column">
+
+
+        <li class="nav-item my-4 ml-3">
+          <a  class="nav-link simptip-position-right simptip-success simptip-fade simptip-smooth" data-tooltip="Home"
+              [routerLink]="['/' + appRoutes.public.welcome.path]" routerLinkActive="router-link-active"
+          >
+            <i-feather name="home" class="big fill-white" ></i-feather>
+          </a>
+        </li>
+
+
+        <li class="nav-item my-4 ml-3">
+          <a  class="nav-link simptip-position-right simptip-success simptip-fade simptip-smooth" data-tooltip="About"
+          [routerLink]="['/' + appRoutes.public.about.path]" routerLinkActive="router-link-active"
+          >
+            <i-feather name="book" class="big fill-white" ></i-feather>
+          </a>
+        </li>
+
+
+        <li class="nav-item my-4 ml-3">
+          <a  class="nav-link simptip-position-right simptip-success simptip-fade simptip-smooth" data-tooltip="Community"
+              [routerLink]="['/' + appRoutes.public.community.path]" routerLinkActive="router-link-active"
+          >
+              <i-feather name="sun" class="big fill-white" ></i-feather>
+          </a>
+        </li>
+
+
+        <li class="nav-item my-4 ml-3">
+          <a  class="nav-link simptip-position-right simptip-success simptip-fade simptip-smooth" data-tooltip="Contact"
+              [routerLink]="['/' + appRoutes.public.contact.path]" routerLinkActive="router-link-active"
+          >
+              <i-feather name="phone" class="big fill-white"></i-feather>
+          </a>
+        </li>
+
+
+      </ul>
+</div>
+
+<nav id="mobile-screen" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-custom-bottom" >
+    <a class="navbar-brand" [routerLink]="['/' + appRoutes.public.welcome.path]">
+        <img src="/assets/images/logo.png" style="height: 50px;" class="img-fluid" alt="Responsive image" >
+    </a>
+    <button id="menu-button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse menu-div" id="navbarSupportedContent">
+
+      <ul class="navbar-nav mr-auto mobile-css">
+        <li class="nav-item">
+          <a class="nav-link"
+          [routerLink]="['/' + appRoutes.public.welcome.path]" routerLinkActive="router-link-active"
+          >
+            <i-feather name="home" class="fill-white mr-3" ></i-feather> Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link"
+          [routerLink]="['/' + appRoutes.public.about.path]" routerLinkActive="router-link-active"
+          >
+            <i-feather name="book" class="fill-white mr-3" ></i-feather> About
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link"
+          [routerLink]="['/' + appRoutes.public.community.path]" routerLinkActive="router-link-active"
+          >
+            <i-feather name="sun" class="fill-white mr-3" ></i-feather> Community
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link"
+          [routerLink]="['/' + appRoutes.public.contact.path]" routerLinkActive="router-link-active"
+          >
+            <i-feather name="phone" class="fill-white mr-3" ></i-feather> Contact
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
