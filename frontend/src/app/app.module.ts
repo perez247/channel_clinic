@@ -13,7 +13,7 @@ import { environment } from 'src/environments/environment';
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     SharedModule,
     AppRoutingModule,
     BrowserAnimationsModule,
