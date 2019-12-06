@@ -1282,7 +1282,7 @@
         "signature": "194b7011603bac1a064e579d5e392a630244b8a64c4853ec30d987997e77a546"
       },
       "../src/public/contact/services/contact/contact.service.ts": {
-        "version": "cef8ea3e0e161a3ee2c435cb19d46690e50e73eb81b281a3a7ea4ebfcfbb6b0a",
+        "version": "92aeac9b36f7c483381981a54d1c491ce52caa8ebb333226c4b0e09617f6ac65",
         "signature": "bf25ac4f1f623889a4204fe96ea0ccc8df6fb05c9fcc99892b69f24aa986cace"
       },
       "../src/public/contact/controller/contact/contact.controller.ts": {
@@ -6391,6 +6391,11 @@
         "../node_modules/@types/node/base.d.ts",
         "../node_modules/@types/node/ts3.2/index.d.ts"
       ],
+      "../node_modules/@types/express-rate-limit/index.d.ts": [
+        "../node_modules/@types/express/index.d.ts",
+        "../node_modules/@types/node/base.d.ts",
+        "../node_modules/@types/node/ts3.2/index.d.ts"
+      ],
       "../src/index.ts": [
         "../node_modules/firebase-functions/lib/index.d.ts"
       ],
@@ -6603,11 +6608,6 @@
         "../node_modules/@types/node/ts3.2/index.d.ts"
       ],
       "../node_modules/@types/long/index.d.ts": [
-        "../node_modules/@types/node/base.d.ts",
-        "../node_modules/@types/node/ts3.2/index.d.ts"
-      ],
-      "../node_modules/@types/express-rate-limit/index.d.ts": [
-        "../node_modules/@types/express/index.d.ts",
         "../node_modules/@types/node/base.d.ts",
         "../node_modules/@types/node/ts3.2/index.d.ts"
       ]
@@ -6933,7 +6933,6 @@
       "../node_modules/firebase-functions/lib/config.d.ts",
       "../node_modules/firebase-functions/lib/function-builder.d.ts",
       "../node_modules/firebase-functions/lib/index.d.ts",
-      "../src/public/contact/services/contact/contact.service.ts",
       "../src/public/contact/controller/contact/contact.controller.ts",
       "../src/public/contact/contact.module.ts",
       "../src/app.module.ts",
@@ -6984,6 +6983,8 @@
       "../node_modules/@nestjs/platform-express/multer/multer.module.d.ts",
       "../node_modules/@nestjs/platform-express/multer/index.d.ts",
       "../node_modules/@nestjs/platform-express/index.d.ts",
+      "../node_modules/@types/express-rate-limit/index.d.ts",
+      "../src/index.ts",
       "../node_modules/@types/lodash/ts3.1/common/common.d.ts",
       "../node_modules/@types/lodash/ts3.1/common/array.d.ts",
       "../node_modules/@types/lodash/ts3.1/common/collection.d.ts",
@@ -6998,8 +6999,7 @@
       "../node_modules/@types/lodash/ts3.1/common/util.d.ts",
       "../node_modules/@types/lodash/ts3.1/index.d.ts",
       "../node_modules/@types/long/index.d.ts",
-      "../node_modules/@types/express-rate-limit/index.d.ts",
-      "../src/index.ts"
+      "../src/public/contact/services/contact/contact.service.ts"
     ]
   },
   "version": "3.7.2"

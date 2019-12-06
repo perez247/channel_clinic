@@ -38,7 +38,7 @@ export class ContactService {
   private setEmail(sendEmailDto: SendEmailDTO) {
     return {
       from: `From Website <${sendEmailDto.sender}>`,
-      to: `excellence.pere@gmail.com`,
+      to: `channelclinicandhospital@gmail.com`,
       subject: `Enquiry from ${sendEmailDto.name}`,
       html: `
         <h3>Enquiry made from your website</h3>

@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 
 import { FeatherModule } from 'angular-feather';
-import {  Home, Book, Sun, Phone, Airplay, Truck, Gift, Heart, UserX, Map, Mail, MessageCircle } from 'angular-feather/icons';
+import {  Home, Book, Sun, Phone, Airplay, Truck, Gift, Heart, UserX, Map, Mail, MessageCircle, Circle } from 'angular-feather/icons';
 
 const icons = {
-  Home, Book, Sun, Phone, Airplay, Truck, Gift, Heart, UserX, Mail, Map, MessageCircle
+  Home, Book, Sun, Phone, Airplay, Truck, Gift, Heart, UserX, Mail, Map, MessageCircle, Circle
 };
 
 @NgModule({
